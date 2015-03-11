@@ -1,0 +1,5 @@
+C:\Users\James\Documents\GitHub\FullyGenericGame\C#\FullyGenericGame\obj\Debug\FullyGenericGame.csprojResolveAssemblyReference.cache
+C:\Users\James\Documents\GitHub\FullyGenericGame\C#\FullyGenericGame\bin\Debug\FullyGenericGame.dll
+C:\Users\James\Documents\GitHub\FullyGenericGame\C#\FullyGenericGame\bin\Debug\FullyGenericGame.pdb
+C:\Users\James\Documents\GitHub\FullyGenericGame\C#\FullyGenericGame\obj\Debug\FullyGenericGame.dll
+C:\Users\James\Documents\GitHub\FullyGenericGame\C#\FullyGenericGame\obj\Debug\FullyGenericGame.pdb

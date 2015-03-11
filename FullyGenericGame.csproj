@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{78894B19-EB5B-467C-9C8D-C5FCA28CC153}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FullyGenericGame</RootNamespace>
+    <AssemblyName>FullyGenericGame</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MultithreadHandler">
+      <HintPath>..\..\..\MultithreadHandler\MultithreadHandler\obj\Debug\MultithreadHandler.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Actions\ObjectManipulation\AddObjectAction.cs" />
+    <Compile Include="Actions\GameAction.cs" />
+    <Compile Include="Actions\GameLevelAction.cs" />
+    <Compile Include="Actions\GameOnlyAction.cs" />
+    <Compile Include="Actions\GameWideAction.cs" />
+    <Compile Include="Actions\ObjectLevelAction.cs" />
+    <Compile Include="Actions\ObjectManipulation\ObjectManipulationAction.cs" />
+    <Compile Include="Actions\ObjectManipulation\ObjectSearchAction.cs" />
+    <Compile Include="Actions\ObjectManipulation\RemoveObjectAction.cs" />
+    <Compile Include="Actions\ObjectManipulation\ObjectSearchCompleteAction.cs" />
+    <Compile Include="Actions\SingleItemAction.cs" />
+    <Compile Include="Actions\StageHand\CloseStageAction.cs" />
+    <Compile Include="Actions\StageHand\KillStageAction.cs" />
+    <Compile Include="Actions\StageHand\OpenStageAction.cs" />
+    <Compile Include="Actions\StageHand\SearchStageAction.cs" />
+    <Compile Include="Actions\StageHand\StageManipulationAction.cs" />
+    <Compile Include="Actions\StageHand\StageSearchCompleteAction.cs" />
+    <Compile Include="Actions\StageHand\TransitionStageAction.cs" />
+    <Compile Include="Actions\StageLevelAction.cs" />
+    <Compile Include="Actions\StageOnlyAction.cs" />
+    <Compile Include="Actions\StageWideAction.cs" />
+    <Compile Include="Game\GenericGame.cs" />
+    <Compile Include="Input\InputWatcher.cs" />
+    <Compile Include="Input\InputWatcherWatcher.cs" />
+    <Compile Include="Object\GameObject.cs" />
+    <Compile Include="Phases\InputPhase.cs" />
+    <Compile Include="Phases\Phase.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResourcesPackage\DisplayPackage.cs" />
+    <Compile Include="ResourcesPackage\InputPackage.cs" />
+    <Compile Include="ResourcesPackage\LoaderPackage.cs" />
+    <Compile Include="ResourcesPackage\Package.cs" />
+    <Compile Include="ResourcesPackage\PackageAdjust.cs" />
+    <Compile Include="ResourcesPackage\UpdatePackage.cs" />
+    <Compile Include="Sprites\MultiSprite.cs" />
+    <Compile Include="Sprites\Sprite.cs" />
+    <Compile Include="Stages\Stage.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

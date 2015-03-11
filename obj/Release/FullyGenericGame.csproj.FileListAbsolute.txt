@@ -1,0 +1,4 @@
+C:\Users\James\Documents\GitHub\FullyGenericGame\C#\FullyGenericGame\bin\Release\FullyGenericGame.dll
+C:\Users\James\Documents\GitHub\FullyGenericGame\C#\FullyGenericGame\bin\Release\FullyGenericGame.pdb
+C:\Users\James\Documents\GitHub\FullyGenericGame\C#\FullyGenericGame\obj\Release\FullyGenericGame.dll
+C:\Users\James\Documents\GitHub\FullyGenericGame\C#\FullyGenericGame\obj\Release\FullyGenericGame.pdb
